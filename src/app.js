@@ -1,5 +1,6 @@
 const path = require('path')
 const express = require('express')
+const port = process.env.PORT || 4000
 const { engine } = require('express-handlebars');
 const hbs = require('hbs')
 const geocode = require('./utils/geocode')
@@ -107,8 +108,8 @@ app.use((req, res) => {
     })
 })
 
-app.listen(4000, () => {
-    console.log('Server berjalan pada port 4000')
+app.listen(port, () => {
+    console.log('Server berjalan pada port '+ port)
 })
 
 
