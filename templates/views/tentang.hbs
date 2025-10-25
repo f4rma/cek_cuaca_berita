@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  {{> head}}
+  <body>
+    {{> header}}
+    <div class="main-content">
+
+      <section class="about-grid">
+        <article class="card features">
+          <h2>Fitur Utama</h2>
+          <ul class="feature-list-clean">
+            <li>
+              <h4>Info Cuaca Lengkap</h4>
+              <p>Informasi suhu, kelembapan, deskripsi cuaca, kecepatan angin, dan indeks UV.</p>
+            </li>
+            <li>
+              <h4>Pencarian Lokasi Cepat</h4>
+              <p>Dukungan bahasa Indonesia dan pembatasan wilayah agar hasil pencarian relevan.</p>
+            </li>
+            <li>
+              <h4>Ringkas & Responsif</h4>
+              <p>Tampilan hasil yang ringan dan nyaman digunakan di semua perangkat.</p>
+            </li>
+          </ul>
+          <br><br><br>
+        </article>
+
+        <aside class="card about-profile">
+          <img class="portrait large" src="/img/me.jpg" alt="Foto pengembang">
+          <h3>Tentang Pengembang</h3>
+          <p>Raditya Putra Farma, mahasiswa Informatika yang tertarik pada Web & Mobile development, Integrasi API, dan Pemrograman Jaringan.</p>
+          <a class="btn-gh" href="https://github.com/f4rma" target="_blank" rel="noopener">
+            <svg class="gh-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M12 .5A12 12 0 0 0 0 12.7c0 5.39 3.44 9.96 8.21 11.58.6.11.82-.27.82-.58l-.02-2.04c-3.34.74-4.04-1.64-4.04-1.64-.55-1.41-1.34-1.79-1.34-1.79-1.1-.78.08-.77.08-.77 1.22.09 1.86 1.28 1.86 1.28 1.08 1.9 2.83 1.35 3.52 1.03.11-.81.42-1.35.77-1.66-2.67-.31-5.48-1.39-5.48-6.2 0-1.37.46-2.49 1.23-3.37-.12-.31-.53-1.57.12-3.27 0 0 1.01-.33 3.31 1.28a11.2 11.2 0 0 1 6.02 0c2.3-1.61 3.31-1.28 3.31-1.28.65 1.7.24 2.96.12 3.27.77.88 1.23 2 1.23 3.37 0 4.83-2.82 5.88-5.5 6.19.44.38.82 1.12.82 2.27l-.01 3.36c0 .31.21.7.82.58A12.13 12.13 0 0 0 24 12.7 12 12 0 0 0 12 .5Z"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+        </aside>
+      </section>
+
+      <!-- Section CV Pengalaman -->
+      <section class="cv-section">
+        <h2 class="cv-heading">Pengalaman Pengembang</h2>
+        <div class="cv-grid">
+          <article class="cv-card">
+            <div class="cv-icon">🌐</div>
+            <h3>Website Nagari Limo Koto</h3>
+            <p class="cv-role">Full Stack Developer</p>
+            <p class="cv-desc">Membangun website profil nagari dengan fitur informasi Jorong, Layanan surat menyurat, berita, dan galeri untuk meningkatkan transparansi dan aksesibilitas informasi bagi masyarakat.</p>
+            <ul class="cv-tech">
+              <li>Node.Js</li>
+              <li>Next.Js</li>
+              <li>Typescript</li>
+            </ul>
+          </article>
+
+          <article class="cv-card">
+            <div class="cv-icon">🎓</div>
+            <h3>Website Alumni IPDN Angkatan 29</h3>
+            <p class="cv-role">Full Stack Developer</p>
+            <p class="cv-desc">Mengembangkan platform alumni dengan sistem pencarian anggota, direktori alumni, dan agregasi berita untuk memfasilitasi networking antaralumni.</p>
+            <ul class="cv-tech">
+              <li>Node.js</li>
+              <li>Next.Js</li>
+              <li>Typescript</li>
+              <li>API Integration</li>
+            </ul>
+          </article>
+
+          <article class="cv-card">
+            <div class="cv-icon">📱</div>
+            <h3>Aplikasi Mobile Katsuchip</h3>
+            <p class="cv-role">Mobile App Developer</p>
+            <p class="cv-desc">Membangun aplikasi mobile order makanan untuk UMKM Katsuchip, dengan fitur katalog produk, keranjang belanja, notifikasi pesanan real-time, online payment.</p>
+            <ul class="cv-tech">
+              <li>Flutter</li>
+              <li>Firebase</li>
+              <li>Dart</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </div>
+    {{> footer}}
+  </body>
+</html>

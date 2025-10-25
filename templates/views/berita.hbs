@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  {{> head}}
+  <body>
+    <div class="main-content">
+      {{> header}}
+
+      <section class="news-header">
+        <h2>Berita Terkini</h2>
+        <form id="news-form" class="news-toolbar">
+          <input type="text" id="news-q" placeholder="Cari topik (mis. cuaca, teknologi)" />
+          <select id="news-cat">
+            <option value="">Semua Kategori</option>
+            <option value="general">General</option>
+            <option value="business">Bisnis</option>
+            <option value="technology">Teknologi</option>
+            <option value="sports">Olahraga</option>
+            <option value="health">Kesehatan</option>
+            <option value="science">Sains</option>
+            <option value="entertainment">Hiburan</option>
+          </select>
+          <button>Cari</button>
+        </form>
+        <p id="news-status"></p>
+      </section>
+
+      <section id="news-grid" class="news-grid"></section>
+    </div>
+    {{> footer}}
+    <script src="/js/berita.js"></script>
+  </body>
+</html>

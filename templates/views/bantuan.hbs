@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  {{> head}}
+  <body>
+    <div class="main-content">
+      {{> header}}
+
+      <h2 class="faq-heading">Pertanyaan yang Sering Muncul</h2>
+
+      <section class="faq-stack">
+        <ul class="faq-list">
+          <li class="faq-item">
+            <span class="dot"></span>
+            <div class="faq-body">
+              <div class="faq-q">Halaman ini digunakan untuk apa?</div>
+              <div class="faq-a">Halaman ini merangkum pertanyaan umum seputar Aplikasi Cek Cuaca 
+                beserta penjelasan singkatnya, agar Anda cepat memahami cara kerja dan penggunaannya.</div>
+            </div>
+          </li>
+
+          <li class="faq-item">
+            <span class="dot"></span>
+            <div class="faq-body">
+              <div class="faq-q">Apa itu API?</div>
+              <div class="faq-a">Application Programming Interface (API) merupakan kumpulan aturan/protokol yang memungkinkan satu aplikasi berkomunikasi dengan aplikasi lain. 
+                Mendefinisikan endpoint, format data, dan metode HTTP sehingga klien dan server dapat bertukar data secara konsisten.</div>
+            </div>
+          </li>
+
+          <li class="faq-item">
+            <span class="dot"></span>
+            <div class="faq-body">
+              <div class="faq-q">API apa yang digunakan dalam aplikasi ini?</div>
+              <div class="faq-a">Aplikasi ini menggunakan:
+                <ul>
+                  <li>Mapbox Forward Geocoding API untuk mengubah teks alamat menjadi koordinat.</li>
+                  <li>Weatherstack Current Weather API untuk mengambil data cuaca real‑time berdasarkan koordinat.</li>
+                </ul>
+                Serta dari server Express menyediakan endpoint RESTful API.
+                </div>
+            </div>
+          </li>
+
+          <li class="faq-item">
+            <span class="dot"></span>
+            <div class="faq-body">
+              <div class="faq-q">Salah satu pola arsitektur API adalah RESTful API</div>
+              <div class="faq-a">
+                RESTful API adalah gaya arsitektur layanan web yang memperlakukan setiap resource memiliki URI dan diakses lewat metode HTTP standar:
+                GET (ambil), POST (buat), PUT/PATCH (ubah), dan DELETE (hapus). Sifatnya stateless, dengan format respons umumnya JSON, dan dapat di-cache.
+                <img class="faq-diagram" src="/img/restful.png" alt="Diagram arsitektur RESTful API" loading="lazy">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    {{> footer}}
+  </body>
+</html>
