@@ -16,8 +16,7 @@ npm install
 node src/app.js
 ```
 
-Notes:
-- Gunakan API key ke environment variables: `MAPBOX_ACCESS_TOKEN`, `WEATHERSTACK_KEY`, `MEDIASTACK_KEY`.
+Note: Gunakan API key ke environment variables: `MAPBOX_ACCESS_TOKEN`, `WEATHERSTACK_KEY`, `MEDIASTACK_KEY`.
 
 Lisensi: ISC
 
